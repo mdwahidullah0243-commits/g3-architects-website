@@ -71,6 +71,11 @@
     color: #FFFFFF;
     cursor: pointer;
 }
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #131313;
+    transition: all .3s;
+}
 
 /* <-- Part: header Style --> */
 
@@ -243,7 +248,7 @@
 /* [Section => facts] */
 
 .facts {
-    /* display: grid; */
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px 20px;
 }
@@ -319,6 +324,21 @@
 
 .sponsors-card img {
     width: 100%;
+}
+
+/* <-- Part: Footer Style --> */
+
+/* [Section => footer] */
+
+.copyright {
+    text-align: center;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+    padding: 30px 0px;
+}
+.copyright-description {
+    font-size: 1.25rem;
+    font-weight: 400;
 }
 
 
@@ -491,6 +511,17 @@
     .sponsors-description {
         width: 300px;
     }
+
+    /* <-- Part: Footer Responsive --> */
+
+    /* [Section => footer] */
+    .copyright {
+        padding: 25px 0px;
+    }
+    .copyright-description {
+        font-size: 0.9rem;
+        line-height: 1.625rem;
+    }
 }
 
 /* Small devices (large phones) */
@@ -649,6 +680,17 @@
 
     .sponsors-description {
         width: 350px;
+    }
+
+    /* <-- Part: Footer Responsive --> */
+
+    /* [Section => footer] */
+    .copyright {
+        padding: 25px 0px;
+    }
+    .copyright-description {
+        font-size: 1rem;
+        line-height: 1.625rem;
     }
 }
 
@@ -829,9 +871,11 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 30px;
     }
+
     .sc-1 {
         grid-column: 1 / span 1;
     }
+
     .sc-5 {
         grid-column: 3 / span 1;
     }
