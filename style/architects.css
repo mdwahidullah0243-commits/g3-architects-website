@@ -240,6 +240,56 @@
     font-weight: 500;
 }
 
+/* [Section => facts] */
+
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px 20px;
+}
+
+.facts-heading {
+    grid-column: 1 / span 3;
+}
+
+.fc-1 {
+    grid-column: 1 / span 1;
+}
+
+.facts-title {
+    font-size: 2.8125rem;
+    font-weight: bold;
+}
+
+.facts-description {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    margin-top: 18px;
+}
+
+.facts-card {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.facts-card h3 {
+    font-size: 2.8125rem;
+    color: #424242;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.facts-card p {
+    font-size: 1.25rem;
+    color: #727272;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+
 
 /* <-- Part: Responsive Origin --> */
 
@@ -365,6 +415,32 @@
     .fers-btn p {
         font-size: 1.2rem;
     }
+
+    /* [Section => facts] */
+    .facts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 10px;
+    }
+
+    .facts-heading {
+        grid-column: 1 / span 2;
+    }
+
+    .fc-3 {
+        grid-column: 1 / span 1;
+    }
+
+    .facts-card {
+        padding: 25px 16px;
+    }
+
+    .facts-card h3 {
+        font-size: 2.4rem;
+    }
+
+    .facts-card p {
+        font-size: 1rem;
+    }
 }
 
 /* Small devices (large phones) */
@@ -480,6 +556,32 @@
     .fers-btn p {
         font-size: 1.2rem;
     }
+
+    /* [Section => facts] */
+    .facts {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 10px;
+    }
+
+    .facts-heading {
+        grid-column: 1 / span 2;
+    }
+
+    .fc-3 {
+        grid-column: 1 / span 1;
+    }
+
+    .facts-card {
+        padding: 35px 25px;
+    }
+
+    .facts-card h3 {
+        font-size: 2.8rem;
+    }
+
+    .facts-card p {
+        font-size: 1.25rem;
+    }
 }
 
 /* Medium devices (tablets) */
@@ -552,6 +654,22 @@
 
     .fers-btn p {
         font-size: 1.3rem;
+    }
+
+    /* [Section => facts] */
+    .facts {
+        gap: 30px 8px;
+    }
+    .facts-card {
+        padding: 25px 12px;
+    }
+
+    .facts-card h3 {
+        font-size: 2.2rem;
+    }
+
+    .facts-card p {
+        font-size: 1.2rem;
     }
 }
 
